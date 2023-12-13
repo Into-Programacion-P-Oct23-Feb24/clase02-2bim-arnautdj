@@ -9,7 +9,7 @@ package paquete1;
  *
  * @author reroes
  */
-public class Ejemplo04 {
+public class Ejemplo041 {
 
     /**
      * @param args the command line arguments
@@ -18,14 +18,23 @@ public class Ejemplo04 {
         // Declarar y generar arreglos en Java
         
         // arreglo de tipo entero
-        int[] arreglo1 = new int[5];
-        // int[] arreglo1 = {1000, 1, 2, 2000, 300};
+        //int[] arreglo1 = new int[5];
+        int[] arreglo1 = {1000, 1, 2, 2000, 300};
         // System.out.println(arreglo1.length);
-        arreglo1[2] = 1000;
+        //arreglo1[2] = 1000;
+        String string = "";
+        int acul = 0;
         for (int i = 0; i < arreglo1.length; i++) {
-            System.out.printf("Subíndice o Índice %d, con valor %d\n",
+            string = String.format("%sSubíndice o Índice %d, con valor %d\n",
+                    string,
                     i, arreglo1[i]);
+            acul = acul + arreglo1[i];
+            
         }
+        string = string.toUpperCase();
+        string = string.format("%sLa suma total del arreglo es: %d", string,
+                acul);
+        System.out.printf("%s",string);
         
         /*
         arreglo.length Me da el numero de elementos que tiene el arreglo
