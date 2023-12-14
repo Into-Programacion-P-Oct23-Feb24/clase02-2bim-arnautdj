@@ -33,7 +33,7 @@ public class Ejemplo10 {
             if (promedios[i]>8.1) {
             
                 mensajeFinal = String.format("%sEstudiante:%s - promedio: "
-                        + "%.4f\n", 
+                        + "%.4f\n",
                         mensajeFinal,
                         estudiantes[i],
                         promedios[i]);
